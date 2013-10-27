@@ -1,0 +1,46 @@
+[
+  { "key": "_headerNavTitle_", "value": "Cisco CWay Admin" },
+  { "key": "_headerNavItemDashboard_", "value": "Dashboard" },
+  { "key": "_headerNavItemAccounts_", "value": "Accounts" },
+  { "key": "_headerNavItemUsers_", "value": "Users" },
+  { "key": "_headerNavItemApps_", "value": "Applications" },
+  { "key": "_headerNavItemPkgs_", "value": "Packages" },
+  { "key": "_headerNavItemFilesystem_", "value": "File System" },
+  { "key": "_headerNavItemReports_", "value": "Reports" },
+  { "key": "_headerNavItemLogs_", "value": "Logs" },
+  { "key": "_headerNavItemCli_", "value": "CLI" },
+  { "key": "_headerNavItemProfile_", "value": "Profile" },
+  { "key": "_headerNavItemLogout_", "value": "Logout" },
+  { "key": "_headerNavItemTheme_", "value": "Theme" },
+
+  { "key": "_welcomeMsg_", "value": "Welcome to the new Cisco CWay Administration application" },
+
+  { "key": "_dashboardPanelTitleAccounts_", "value": "Accounts" },
+  { "key": "_dashboardPanelTotalAccounts_", "value": "Total Accounts" },
+  { "key": "_dashboardPanelTitleApps_", "value": "Applications" },
+  { "key": "_dashboardPanelTotalApps_", "value": "Total Applications" },
+  { "key": "_dashboardPanelWeeklyTitle_", "value": "Weekly Stats" },
+  { "key": "_dashboardPanelWeeklyAccounts_", "value": "New Accounts" },
+  { "key": "_dashboardPanelWeeklyApps_", "value": "New Applications" },
+  { "key": "_dashboardPanelTabsTitle_", "value": "Tabs" },
+  { "key": "_dashboardPanelRecentTitle_", "value": "Recent Activity" },
+  { "key": "_dashboardPanelRecentRegisteredOn_", "value": "Registered on" },
+  { "key": "_dashboardPanelRecentStatusBanned_", "value": "Banned" },
+  { "key": "_dashboardPanelRecentStatusPending_", "value": "Pending" },
+  { "key": "_dashboardPanelRecentStatusApproved_", "value": "Approved" },
+  { "key": "_dashboardPanelRecentCurrentStatus_", "value": "Approved" },
+
+  { "key": "_footerLinkContacts_", "value": "Contacts" },
+  { "key": "_footerLinkHelp_", "value": "Help" },
+  { "key": "_footerLinkTerms_", "value": "Terms & Conditions" },
+  { "key": "_footerLinkPrivacy_", "value": "Privacy Statement" },
+  { "key": "_footerLinkTrademark_", "value": "Trademarks" },
+
+  { "key": "_loginTitleMain_", "value": "Admin Login" },
+  { "key": "_loginTitleUsername_", "value": "Username" },
+  { "key": "_loginTitlePassword_", "value": "Password" },
+  { "key": "_loginButtonSubmit_", "value": "Login" },
+  { "key": "_loginTitleFailureUnauthorized_", "value": "Invalid username/password combination" },
+  { "key": "_loginBodyFailureUnauthorized_", "value": "The username and password you entered do not match. Usernames and passwords are case sensitive." }
+
+]

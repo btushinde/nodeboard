@@ -1,0 +1,18 @@
+!!! 5
+head
+  meta(charset='utf-8')
+  title Warboard Beta
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+  != css('app')
+  != css('admin')
+
+body
+  .container
+    .content-wrapper(ng-controller='rootController')
+      .ng-include(src="'views/templates/common/header.html'")
+      .row(data-ng-view='data-ng-view')
+
+  != js('app')
+
+| </html>

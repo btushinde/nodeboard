@@ -1,0 +1,261 @@
+/*
+   ---
+   --- General Styles
+   --- The "content-wrapper" style is needed for the sticky top
+   --- header and sticky bottom footer
+   ---
+*/
+html, body {
+  font-size: 14px;
+  line-height: 1em;
+  height: 100%;
+}
+.centered {
+  text-align: center;
+}
+.vcentered {
+  vertical-align: middle !important;
+}
+.content-wrapper {
+  height: auto !important;
+  margin: 0 auto -60px;
+  min-height: 100%;
+  padding: 0 0 60px;
+}
+.content-wrapper > .container {
+  padding: 80px 15px 0;
+}
+sup {
+  top: -0.5em;
+}
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.label.user-list {
+  margin-right: 3px;
+  display: inline-block;
+}
+.nav-tabs > li:hover {
+  cursor: default;
+}
+
+
+/*
+  ---
+  --- JQuery Datatable Plugin Styles
+  --- The main styles are already defined in their own file. These styles
+  --- are simply overrides for those
+  ---
+*/
+div.dataTables_info, div.dataTables_length {
+  margin-left: 16px;
+}
+div.dataTables_paginate, div.dataTables_filter {
+  margin-right: 16px;
+}
+div.dataTables-filter input.form-control {
+  width: 150px;
+}
+.bootstrap-select:not([class*="span"]) { /* Overrides default Bootstrap select plugin width */
+  width: 75px;
+}
+.row.datatable-actions {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.row.datatable-actions a {
+  text-align: left;
+}
+
+
+/*
+    ---
+    --- Footer Styles
+    --- Surprisingly Bootstrap does not define a standard footer so we
+    --- are rolling our own and these are the styles
+    ---
+*/
+footer {
+  height: 60px;
+}
+footer ul {
+  border-top: 1px solid #eaeaea;
+  font-size: 1.1rem;
+  padding-top: 10px;
+  margin: 0;
+  color: #007fc5;
+  overflow: visible;
+}
+footer ul li {
+  float: left;
+  display: inline-block;
+  position: relative;
+  padding: 0 19px 0 0;
+  font-size: 11px;
+}
+footer ul li:after {
+  position: absolute;
+  right: 7px;
+  top: 0;
+  color: #999;
+  content: "|";
+}
+footer ul li:last-child:after {
+  content: none;
+}
+
+
+
+.tm-tag {
+    background-color: #F5F5F5;
+    border: 1px solid #BBBBBB;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555555;
+    display: inline-block;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    margin: 0 5px 5px 0;
+    padding: 4px;
+    text-decoration: none;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    vertical-align: middle;
+}
+.tm-tag .tm-tag-remove {
+    color: #000000;
+    font-weight: bold;
+    margin-left: 4px;
+    opacity: 0.2;
+}
+.tm-tag .tm-tag-remove:hover {
+    color: #000000;
+    opacity: 0.4;
+    text-decoration: none;
+}
+.tm-tag.tm-tag-warning {
+    background-color: #F2C889;
+    border-color: #F0A12F;
+    color: #945203;
+}
+.tm-tag.tm-tag-error {
+    background-color: #E69CA6;
+    border-color: #D24A5D;
+    color: #84212E;
+}
+.tm-tag.tm-tag-success {
+    background-color: #CDE69C;
+    border-color: #A5D24A;
+    color: #638421;
+}
+.tm-tag.tm-tag-info {
+    background-color: #C5EEFA;
+    border-color: #5DC8F7;
+    color: #4594B5;
+}
+.tm-tag.tm-tag-inverse {
+    background-color: #555555;
+    border-color: #333333;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) inset;
+    color: #CCCCCC;
+}
+.tm-tag.tm-tag-inverse .tm-tag-remove {
+    color: #FFFFFF;
+}
+.tm-tag.tm-tag-large {
+    border-radius: 4px 4px 4px 4px;
+    font-size: 16.25px;
+    padding: 11px 7px;
+}
+.tm-tag.tm-tag-small {
+    border-radius: 3px 3px 3px 3px;
+    font-size: 11.05px;
+    padding: 2px 4px;
+}
+.tm-tag.tm-tag-mini {
+    border-radius: 2px 2px 2px 2px;
+    font-size: 9.75px;
+    padding: 0 2px;
+}
+.tm-tag.tm-tag-plain {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    box-shadow: none;
+    color: #333333;
+}
+.tm-tag.tm-tag-disabled {
+    background-color: #E6E6E6;
+    border-color: #CCCCCC;
+    box-shadow: none;
+    color: #AAAAAA;
+}
+.tm-tag.tm-tag-disabled .tm-tag-remove {
+    display: none;
+}
+input.tm-input[type="text"] {
+    margin-bottom: 5px;
+    vertical-align: middle !important;
+}
+.control-group.tm-group {
+    margin-bottom: 5px;
+}
+.form-horizontal .control-group.tm-group {
+    margin-bottom: 15px;
+}
+
+@keyframes launchT {
+  0%    { transform: translate(-200px, -200px); transform: rotate(-25deg); }
+  10%   { transform: translate(-190px, 175px);transform: rotate(-20deg); }
+  20%   { transform: translate(-180px, 150px);transform: rotate(-15deg); }
+  30%   { transform: translate(-170px, 125px);transform: rotate(-10deg); }
+  40%   { transform: translate(-160px, 100px);transform: rotate(-5deg); }
+  50%   { transform: translate(-140px, 75px);transform: rotate(0deg); }
+  60%   { transform: translate(-120px, 50px);transform: rotate(10deg); }
+  70%   { transform: translate(-100px, 25px);transform: rotate(15deg); }
+  80%   { transform: translate(-80px, 0px);transform: rotate(20deg); }
+  90%   { transform: translate(-60px, -50px);transform: rotate(25deg); }
+  100%  { transform: translate(-50px, -100px);transform: rotate(30deg); }
+}
+
+@keyframes launch {
+  0%    { left: -200px; top: 200px; transform: rotate(-25deg); }
+  10%   { left: -190px; top: 175px; transform: rotate(-20deg); }
+  20%   { left: -180px; top: 150px; transform: rotate(-15deg); }
+  30%   { left: -170px; top: 125px; transform: rotate(-10deg); }
+  40%   { left: -160px; top: 100px; transform: rotate(-5deg); }
+  50%   { left: -140px; top: 75px; transform: rotate(0deg); }
+  60%   { left: -120px; top: 50px; transform: rotate(10deg); }
+  70%   { left: -100px; top: 25px; transform: rotate(15deg); }
+  80%   { left: -80px; top: 0px; transform: rotate(20deg); }
+  90%   { left: -60px; top: -50px; transform: rotate(25deg); }
+  100%  { left: -50px; top: -100px; transform: rotate(30deg); }
+}
+img.rocket {
+  z-index: 9999;
+  position: absolute;
+  left: -20px;
+  top: -40px;
+}
+img.rocket-move {
+  animation-name: launch;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+}
+
+.wizard .wizard-button {
+  cursor: pointer;
+  -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
+
+
+
+
+button[type="submit"]{
+  display: inline;
+}

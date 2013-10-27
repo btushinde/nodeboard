@@ -1,0 +1,55 @@
+div(ng-controller="cliController")
+  section.row.app.cli
+    h1.col-lg-12 Command Line Interface
+      .col-lg-8
+        terminal
+        terminal
+      .test.col-lg-4
+        .panel.panel-secondary
+          .panel-header
+            h3 Test Console
+
+          .panel-body
+            #accordion.panel-group
+              .panel.panel-default
+                .panel-heading
+                  h4.panel-title
+                    a.accordion-toggle(data-toggle='collapse', data-parent='#accordion', href='#collapseOne')
+                      | Bookmarks
+                #collapseOne.panel-collapse.collapse
+                  .panel-body
+                    | Anim pariatur cliche reprehenderit, enim eiusmod high
+
+
+              .panel.panel-default
+                .panel-heading
+                  h4.panel-title
+                    a.accordion-toggle(data-toggle='collapse', data-parent='#accordion', href='#collapseTwo')
+                      | Alerts
+                #collapseTwo.panel-collapse.collapse
+                  .panel-body
+                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+
+
+              .panel.panel-default
+                .panel-heading
+                  h4.panel-title
+                    a.accordion-toggle(data-toggle='collapse', data-parent='#accordion', href='#collapseThree')
+                      | Chat
+                #collapseThree.panel-collapse.collapse
+                  .panel-body
+                    | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+
+
+            .input-group
+              form(ng-submit='send_msg()')
+                textarea.form-control(ng-model='userInput')
+                .btn-group
+                  button.btn.btn-danger(type='submit', ng-class='{disabled: activeTerm == undefined}')
+                    | Send
+                    span.label.label-primary {{activeTerm}}
+                  button.btn.btn-danger.dropdown-toggle(type='button', data-toggle='dropdown')
+                    span.caret
+                  ul.dropdown-menu(role='menu')
+                    li(ng-repeat='term in terminals')
+                      a(ng-click='selectTerm(term.id)') terminal_{{term.id}}

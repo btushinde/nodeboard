@@ -1,0 +1,37 @@
+[
+  { "key": "_headerNavTitle_", "value": "Apollo Administracin" },
+  { "key": "_headerNavItemDashboard_", "value": "Salpicadero" },
+  { "key": "_headerNavItemAccounts_", "value": "Cuentas" },
+  { "key": "_headerNavItemUsers_", "value": "Usuarios" },
+  { "key": "_headerNavItemApps_", "value": "Aplicaciones" },
+  { "key": "_headerNavItemPkgs_", "value": "Paquetes" },
+  { "key": "_headerNavItemFilesystem_", "value": "Sistema de Archivos" },
+  { "key": "_headerNavItemReports_", "value": "Informes" },
+  { "key": "_headerNavItemLogs_", "value": "Registros" },
+  { "key": "_headerNavItemProfile_", "value": "Perfil" },
+  { "key": "_headerNavItemLogout_", "value": "Salir" },
+  { "key": "_headerNavItemTheme_", "value": "Tema" },
+
+  { "key": "_welcomeMsg_", "value": "Bienvenidos a la nueva Apollo Administracin aplicacin" },
+
+  { "key": "_dashboardPanelTitleUsers_", "value": "Usuarios" },
+  { "key": "_dashboardPanelTotalUsers_", "value": "Total de Usuarios" },
+  { "key": "_dashboardPanelTitleApps_", "value": "Aplicaciones" },
+  { "key": "_dashboardPanelTotalApps_", "value": "Total Aplicaciones" },
+  { "key": "_dashboardPanelWeeklyTitle_", "value": "Evolucin Semanal" },
+  { "key": "_dashboardPanelWeeklyUsers_", "value": "Nuevos Usuarios" },
+  { "key": "_dashboardPanelWeeklyApps_", "value": "Nuevos Aplicaciones" },
+  { "key": "_dashboardPanelTabsTitle_", "value": "Tabs" },
+  { "key": "_dashboardPanelRecentTitle_", "value": "Actividad Reciente" },
+  { "key": "_dashboardPanelRecentRegisteredOn_", "value": "Registrado el" },
+  { "key": "_dashboardPanelRecentStatusBanned_", "value": "Banned" },
+  { "key": "_dashboardPanelRecentStatusPending_", "value": "Pendiente" },
+  { "key": "_dashboardPanelRecentStatusApproved_", "value": "Aprobado" },
+  { "key": "_dashboardPanelRecentCurrentStatus_", "value": "Aprobado" },
+
+  { "key": "_footerLinkContacts_", "value": "Contactos" },
+  { "key": "_footerLinkHelp_", "value": "Ayudar" },
+  { "key": "_footerLinkTerms_", "value": "Trminos y Condiciones" },
+  { "key": "_footerLinkPrivacy_", "value": "Declaracin de Privacidad" },
+  { "key": "_footerLinkTrademark_", "value": "Marcas Comerciales" }
+]

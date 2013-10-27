@@ -1,0 +1,54 @@
+nav#navbar.navbar.navbar-default.navbar-fixed-top(role='navigation', data-ng-cloak='data-ng-cloak')
+    .navbar-header
+        button#navbar-toggle.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='/admin')
+          | {{ '_headerNavTitle_' | i18n }}
+          sup  {{ currentVersion }}
+      #nav-collapse.collapse.navbar-collapse
+        ul.nav.navbar-nav
+          li
+            a(href='/admin') {{ '_headerNavItemDashboard_' | i18n }}
+          li
+            a(href='apps') {{ '_headerNavItemApps_' | i18n }}
+          li.divider
+          //- li
+          //-   a(href='accounts') {{ '_headerNavItemAccounts_' | i18n }}
+          //- li.divider
+          //- li
+          //-   a(href='users') {{ '_headerNavItemUsers_' | i18n }}
+          //- li.divider
+          //- li.dropdown
+          //-   a.dropdown-toggle(href='#', data-toggle='dropdown')
+          //-     | {{ appDropDownTitle }}
+          //-     b.caret
+          //-   ul.dropdown-menu
+          //-     li
+          //-       a(href='apps') {{ '_headerNavItemApps_' | i18n }}
+          //-     li
+          //-       a(href='pkgs') {{ '_headerNavItemPkgs_' | i18n }}
+          //- li.divider
+          //- li
+          //-   a(href='files') {{ '_headerNavItemFilesystem_' | i18n }}
+          //- li.divider
+          //- li
+          //-   a(href='reports') {{ '_headerNavItemReports_' | i18n }}
+          //- li.divider
+          //- li
+          //-   a(href='logs') {{ '_headerNavItemLogs_' | i18n }}
+          li
+            a(href='cli') {{ '_headerNavItemCli_' | i18n  }}
+        ul.nav.navbar-nav.navbar-right
+          li
+            a {{ currentUser }}
+          li
+            a(ng-click='doLogout()') {{ '_headerNavItemLogout_' | i18n }}
+          li.dropdown.hidden-xs
+            a.dropdown-toggle(href='#', data-toggle='dropdown')
+              | {{ '_headerNavItemTheme_' | i18n }}: {{ currentTheme }}
+              b.caret
+            ul.dropdown-menu
+              li(ng-repeat='theme in themes')
+                a(ng-click='changeTheme(theme)') {{ theme.name }}

@@ -1,0 +1,21 @@
+.terminal-ui
+  .panel.panel-primary
+    .panel-heading
+      h4 terminal_{{terminal.id}}
+    .btn-toolbar
+      .btn-group.pull-right
+        button.btn-sm.btn-default.navbar-btn(type='button')
+          i.glyphicon.glyphicon-bookmark
+          | Add Bookmark
+        button.btn-sm.btn-default.navbar-btn(type='button')
+          i.glyphicon.glyphicon-th-large
+          | View Grid
+        button.btn-sm.btn-default.navbar-btn(type='button')
+          i.glyphicon.glyphicon-fullscreen
+          | Maximize
+        button.btn-sm.btn-default.navbar-btn(type='button')
+          i.glyphicon.glyphicon-share
+          | Share
+    .panel-body
+      ul
+        li(ng-repeat='msg in terminal.buffer') {{msg}}
